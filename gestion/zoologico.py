@@ -20,15 +20,15 @@ class Zoologico:
     def setUbicacion(self, lugar):
         self.__ubicacion = lugar
     
-    def getZonas(self):
+    def getZona(self):
         return self.__zonas
     
-    def setZonas(self, zone):
+    def setZona(self, zone):
         self.__zonas = zone
 
     #metodos
 
-    def TotalAnimales(self):
+    def cantidadTotalAnimales(self):
         cantidadAnimales = 0
         for zona in self.__zonas:
             if isinstance(zona, Zona):
