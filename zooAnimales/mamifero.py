@@ -9,6 +9,7 @@ class Mamifero(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self.__pelaje = pelaje
         self.__patas = patas
+        Mamifero.__listado.append(self)
 
     #metodos get y set
 

@@ -9,6 +9,7 @@ class Reptil(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self.__colorEscamas = colorEscamas
         self.__largoCola = largoCola
+        Reptil.__listado.append(self)
 
     #metodos get y set
 

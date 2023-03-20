@@ -9,6 +9,7 @@ class Anfibio(Animal):
         super().__init__(nombre, edad, habitat, genero)
         self.__colorPiel = colorPiel
         self.__venenoso = venenoso
+        Anfibio.__listado.append(self)
 
     #metodos get y set
 
