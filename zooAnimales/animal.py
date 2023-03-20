@@ -1,8 +1,3 @@
-
-
-from zooAnimales.mamifero import Mamifero
-
-
 class Animal:
     __totalAnimales = 0
 
