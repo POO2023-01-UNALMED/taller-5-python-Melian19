@@ -65,9 +65,9 @@ class Animal:
         
     def toString(self):
         if (self.__zona == None):
-            return "Mi nombre es " + self.__nombre + ", tengo una edad de " + self.__edad + ", habito en " + self.__habitat + " y mi genero es " + self.__genero
+            return "Mi nombre es " + str(self.__nombre) + ", tengo una edad de " + str(self.__edad) + ", habito en " + str(self.__habitat) + " y mi genero es " + str(self.__genero)
         else:
-            return "Mi nombre es " + self.__nombre + ", tengo una edad de " + self.__edad + ", habito en " + self.__habitat + " y mi genero es " + self.__genero + ", la zona en la que me ubico es " + self.__zona.getNombre() + ", en el " + self.__zona.getZoo().getNombre()
+            return "Mi nombre es " + str(self.__nombre) + ", tengo una edad de " + str(self.__edad) + ", habito en " + str(self.__habitat) + " y mi genero es " + str(self.__genero) + ", la zona en la que me ubico es " + str(self.__zona.getNombre()) + ", en el " + str(self.__zona.getZoo().getNombre())
         
     def movimiento(self):
         return "desplazaese"
