@@ -35,7 +35,7 @@ class Anfibio(Animal):
     #metodos
 
     @classmethod
-    def cantidadMamiferos(cls):
+    def cantidadAnfibios(cls):
         return len(cls.__listado)
     
     @classmethod

@@ -35,7 +35,7 @@ class Pez(Animal):
     #metodos
 
     @classmethod
-    def cantidadMamiferos(cls):
+    def cantidadPeces(cls):
         return len(cls.__listado)
     
     @classmethod
