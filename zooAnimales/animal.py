@@ -55,9 +55,15 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
-        return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces + "\nAnfibios: " + Anfibio.cantidadAnfibios()
+        return "Mamiferos: " + mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces + "\nAnfibios: " + Anfibio.cantidadAnfibios()
     
     def __str__(self):
+        if (self.__zona == None):
+            return "Mi nombre es " + self.__nombre + ", tengo una edad de " + self.__edad + ", habito en " + self.__habitat + " y mi genero es " + self.__genero
+        else:
+            return "Mi nombre es " + self.__nombre + ", tengo una edad de " + self.__edad + ", habito en " + self.__habitat + " y mi genero es " + self.__genero + ", la zona en la que me ubico es " + self.__zona.getNombre() + ", en el " + self.__zona.getZoo().getNombre()
+        
+    def toString(self):
         if (self.__zona == None):
             return "Mi nombre es " + self.__nombre + ", tengo una edad de " + self.__edad + ", habito en " + self.__habitat + " y mi genero es " + self.__genero
         else:
