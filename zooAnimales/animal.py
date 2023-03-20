@@ -1,3 +1,6 @@
+from zooAnimales import mamifero
+
+
 class Animal:
     __totalAnimales = 0
 
