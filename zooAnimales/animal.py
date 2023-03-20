@@ -1,5 +1,6 @@
 class Animal:
     __totalAnimales = 0
+    cantidadMamiferos = 0
 
     def __init__(self, nombre, edad, habitat, genero):
         self.__nombre = nombre
@@ -55,7 +56,7 @@ class Animal:
 
     @classmethod
     def totalPorTipo(cls):
-        return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces + "\nAnfibios: " + Anfibio.cantidadAnfibios()
+        return "Mamiferos: " + str(cantidadMamiferos) + "\nAves: " + Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces + "\nAnfibios: " + Anfibio.cantidadAnfibios()
     
     def __str__(self):
         if (self.__zona == None):
