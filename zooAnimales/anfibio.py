@@ -47,3 +47,9 @@ class Anfibio(Animal):
     def crearSalamandra(cls, name, age, gen):
         cls.salamandras += 1
         return Anfibio(name, age, "selva", gen, "negro y amarillo", False)
+    
+    def movimiento(self):
+        return "saltar"
+    
+    def __str__(self):
+        super().__str__()

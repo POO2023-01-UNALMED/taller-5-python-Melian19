@@ -47,3 +47,9 @@ class Pez(Animal):
     def crearBacalao(cls, name, age, gen):
         cls.bacalaos += 1
         return Pez(name, age, "oceano", gen, "gris", 6)
+    
+    def movimiento(self):
+        return "nadar"
+    
+    def __str__(self):
+        super().__str__()

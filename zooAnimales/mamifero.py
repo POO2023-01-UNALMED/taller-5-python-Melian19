@@ -47,3 +47,9 @@ class Mamifero(Animal):
     def crearLeon(cls, name, age, gen):
         cls.leones += 1
         return Mamifero(name, age, "selva", gen, True, 4)
+    
+    def movimiento(self):
+        return "desplazarse"
+    
+    def __str__(self):
+        super().__str__()

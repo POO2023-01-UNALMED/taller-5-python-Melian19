@@ -28,7 +28,7 @@ class Ave(Animal):
     #metodos
 
     @classmethod
-    def cantidadMamiferos(cls):
+    def cantidadAves(cls):
         return len(cls.__listado)
     
     @classmethod
@@ -40,3 +40,9 @@ class Ave(Animal):
     def crearAguila(cls, name, age, gen):
         cls.aguilas += 1
         return Ave(name, age, "montanas", gen, "blanco y amarillo")
+    
+    def movimiento(self):
+        return "volar"
+    
+    def __str__(self):
+        super().__str__()

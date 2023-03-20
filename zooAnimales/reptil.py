@@ -47,3 +47,9 @@ class Reptil(Animal):
     def crearSerpiente(cls, name, age, gen):
         cls.serpientes += 1
         return Reptil(name, age, "jungla", gen, "blanco", 1)
+    
+    def movimiento(self):
+        return "reptar"
+    
+    def __str__(self):
+        super().__str__()
